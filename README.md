@@ -1,50 +1,36 @@
-# 📱 SpendSense – Smart Expense Tracker  
+# SpendSense
 
-SpendSense is a **Flutter-based mobile app** that helps users **track daily expenses, manage budgets, and analyze spending patterns**.  
-It uses **SQLite** for offline storage, ensuring your data is available anytime, even without internet.  
+A personal expense tracker built as a Flutter Progressive Web App — you can install it straight from the browser without an app store, and it works offline.
 
----
+## What it does
 
-## 🚀 Features  
-- 📊 **Expense Tracking** – Add, edit, and categorize daily expenses.  
-- 💰 **Budget Monitoring** – Set and track monthly budgets.  
-- 📈 **Analytics Dashboard** – Visual insights into category-wise spending.  
-- 🔄 **Offline-first** – Powered by SQLite, no internet needed.  
-- 🌓 **Dark Mode Support** – Seamless UI in light and dark themes.  
+- Log and categorize expenses
+- Set budget limits by category and track against them
+- Visual spend breakdowns using fl_chart
+- Export expense reports as PDF
+- Works offline — data is stored locally in the browser, so there's no dependency on a server connection
+- Installable as a PWA — add it to your home screen like a native app
 
----
+## Tech stack
 
-## 🛠️ Tech Stack  
-- **Frontend:** Flutter (Dart)  
-- **Database:** SQLite  
-- **IDE:** Android Studio / VS Code  
+- Flutter, targeting the web as a Progressive Web App
+- Provider for state management
+- Local browser storage (localStorage) for offline-first data persistence
+- fl_chart for the analytics views
 
----
+## Running it locally
 
-## ⚙️ Installation & Setup  
+```bash
+flutter pub get
+flutter run -d chrome
+```
 
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/mohitrajjj/SpendSense-flutter.git
-   cd SpendSense-flutter
+Build for production:
 
-2. Install dependencies:
-   flutter pub get
-3.Run on emulator or connected device:
-   flutter run
+```bash
+flutter build web
+```
 
+## About me
 
-🎯 Future Improvements
-🔔 Add notifications for budget limits
-☁️ Cloud sync (Firebase/Supabase)
-📤 Export data to CSV/Excel
-🤖 AI-based auto expense categorization
-
-
-👨‍💻 Author
-Mohit Raj
-🔗 https://github.com/mohitrajjj
-💻 www.linkedin.com/in/mohit-rajj
-
-⭐ Contribute
-If you like this project, please ⭐ the repo. Your feedback is welcome!
+Mohit Raj. [GitHub](https://github.com/mohitrajjj) · [LinkedIn](https://linkedin.com/in/mohit-rajj)
